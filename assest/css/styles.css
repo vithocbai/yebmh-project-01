@@ -50,8 +50,19 @@ a {
   overflow: hidden;
 }
 /* ===== Header ===== */
-.header {
+.sticky-header {
+  position: sticky;
+
+  top: -26px;
+  padding-top: 26px;
+  background: #e6f0ff;
+  z-index: 1;
+}
+
+.hero-wrap {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: #e6f0ff;
   height: 100vh;
 }
@@ -59,7 +70,7 @@ a {
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 12px 0;
 }
 
 .navbar ul {
@@ -72,6 +83,7 @@ a {
   font-weight: 500;
   font-size: 1.4rem;
   color: #4f5361;
+  justify-content: space-;
 }
 
 .navbar ul a:hover {
